@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-06-06T13:58:10.109Z",
-    "end": "2022-06-06T13:58:21.190Z",
-    "duration": 11081,
+    "start": "2022-06-17T16:32:23.993Z",
+    "end": "2022-06-17T16:32:33.874Z",
+    "duration": 9881,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "0cdff682-53f7-4291-b9d9-a6fcbb2adfc0",
+      "uuid": "e5a5f054-e9f5-4089-b2b9-d145476ae79e",
       "title": "",
       "fullFile": "cypress/integration/test/first.js",
       "file": "cypress/integration/test/first.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ec5fbcf1-325e-4f80-a49a-1a88d3a62353",
+          "uuid": "e7264983-bba7-4959-aa70-8fae7aea0e7b",
           "title": "My first Test suite test case execution",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "my first test case",
               "fullTitle": "My first Test suite test case execution my first test case",
               "timedOut": null,
-              "duration": 7962,
+              "duration": 7092,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"https://rahulshettyacademy.com/seleniumPractise/#/\");\ncy.get(\".search-keyword\").type(\"Ca\");\ncy.wait(2000); //first assertion\ncy.get(\".product:visible\").should('have.length', 4); //Cypress assertion- only visible product display.\n// parent child chaining\n// we learn find, eq, contain in get command\n//we can use alias in cypress\ncy.get(\".products\").as(\"productlocator\");\ncy.get(\"@productlocator\").find(\".product\").eq(2).contains(\"ADD TO CART\").click(); //eq is for indexing and find is use to find locator in parent locator\ncy.get(\"@productlocator\").find(\".product\").each(($el, index, $list) => {\n  // $el is a wrapped jQuery element\n  const vegText = $el.find(\"h4.product-name\").text();\n  if (vegText.includes(\"Cashews\")) {\n    // wrap this element so we can\n    // use cypress commands on it\n    cy.wrap($el).contains(\"ADD TO CART\").click();\n  }\n}); //Print logtxt on cyperess terminal and cypress log\n/*const logtext=cy.get(\".brand.greenLogo\").text()\nconsole.log(logtext)\ncy.log(logtext) */\n//resolve the promicess as it is not cypree command\ncy.get(\".brand.greenLogo\").then(function (logelement) //logelement is variable \n{\n  cy.log(logelement.text());\n  console.log(\"this is test case execution\"); // print on F12 console- this is asyn but you have to resolve promicess for syn nature.\n}); //validate logtext is correct value or not- second assertion\ncy.get(\".brand.greenLogo\").should(\"have.text\", \"GREENKART\"); //checkout scenario\ncy.get('.cart-icon > img').click();\ncy.contains(\"PROCEED TO CHECKOUT\").click();\ncy.contains(\"Place Order\").click();",
               "err": {},
-              "uuid": "deefe54c-8744-44b8-97f8-408051f2a284",
-              "parentUUID": "ec5fbcf1-325e-4f80-a49a-1a88d3a62353",
+              "uuid": "c0f24848-ee15-4ec7-b97d-dda59e99be6e",
+              "parentUUID": "e7264983-bba7-4959-aa70-8fae7aea0e7b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "deefe54c-8744-44b8-97f8-408051f2a284"
+            "c0f24848-ee15-4ec7-b97d-dda59e99be6e"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7962,
+          "duration": 7092,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
