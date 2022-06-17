@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-06-17T16:32:37.009Z",
-    "end": "2022-06-17T16:32:45.557Z",
-    "duration": 8548,
+    "start": "2022-06-17T17:23:58.478Z",
+    "end": "2022-06-17T17:24:13.263Z",
+    "duration": 14785,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "75ad43e9-c3d9-4311-8de4-50db370201ae",
+      "uuid": "a2fac294-4f5e-4492-b4e3-b0d260a27316",
       "title": "",
       "fullFile": "cypress/integration/test/second.js",
       "file": "cypress/integration/test/second.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e1ce961e-317b-4842-8653-5b42dde91ced",
+          "uuid": "e21e12f0-f5c3-4333-9a8a-ffc2ec17a9ca",
           "title": "My second suite test case execution",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "My first test case execution from second suite",
               "fullTitle": "My second suite test case execution My first test case execution from second suite",
               "timedOut": null,
-              "duration": 6282,
+              "duration": 12562,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.log(\"test case execution started\");\ncy.visit(\"https://rahulshettyacademy.com/AutomationPractice/\"); //checkbox checked\ncy.get(\"#checkBoxOption1\").check(); //click also use but check is more reliable\ncy.get(\"#checkBoxOption1\").uncheck(); //unchecked\n//use asseration is checkbox checked or not\ncy.get(\"#checkBoxOption1\").check().should(\"be.checked\").and(\"have.value\", \"option1\"); //assertion unchecked\ncy.get(\"#checkBoxOption1\").uncheck().should(\"not.be.checked\").should(\"have.value\", \"option1\");",
               "err": {},
-              "uuid": "ac8355cc-ffd2-45db-bc76-134da9d2850a",
-              "parentUUID": "e1ce961e-317b-4842-8653-5b42dde91ced",
+              "uuid": "273a902e-b69b-4fff-8f06-59c257eac6aa",
+              "parentUUID": "e21e12f0-f5c3-4333-9a8a-ffc2ec17a9ca",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ac8355cc-ffd2-45db-bc76-134da9d2850a"
+            "273a902e-b69b-4fff-8f06-59c257eac6aa"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6282,
+          "duration": 12562,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
