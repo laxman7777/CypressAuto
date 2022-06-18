@@ -8,8 +8,8 @@ describe("My first Test suite test case execution",function()
         cy.get(".search-keyword").type("Ca")
         cy.wait(2000)
 
-        //first assertion
-        cy.get(".product:visible").should('have.length',4)    //Cypress assertion- only visible product display.
+        //first assertion //lengt is 4 for failed scenario i done 5
+        cy.get(".product:visible").should('have.length',5)    //Cypress assertion- only visible product display.
         // parent child chaining
         // we learn find, eq, contain in get command
         //we can use alias in cypress
