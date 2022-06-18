@@ -13,7 +13,10 @@
     "script-chrome": "npm run chrome-test || npm run postchrome-test",
     "firefox-test": "cypress run --browser firefox --headless",
     "postfirefox-test": "jrm ./results/combined-report.xml \"./results/results-*.xml\"",
-    "script-firefox": "npm run firefox-test || npm run postfirefox-test"
+    "script-firefox": "npm run firefox-test || npm run postfirefox-test",
+    "edge-test": "cypress run --browser edge --headless",
+    "postedge-test": "jrm ./results/combined-report.xml \"./results/results-*.xml\"",
+    "script-edge": "npm run edge-test || npm run postedge-test"
   },
   "author": "",
   "license": "ISC",
