@@ -7,7 +7,13 @@
 
     "electron-test": "cypress run",
     "postelectron-test": "jrm ./results/combined-report.xml \"./results/results-*.xml\"",
-    "script-electron": "npm run electron-test || npm run postelectron-test"
+    "script-electron": "npm run electron-test || npm run postelectron-test",
+    "chrome-test": "cypress run --browser chrome --headless",
+    "postchrome-test": "jrm ./results/combined-report.xml \"./results/results-*.xml\"",
+    "script-chrome": "npm run chrome-test || npm run postchrome-test",
+    "firefox-test": "cypress run --browser firefox --headless",
+    "postfirefox-test": "jrm ./results/combined-report.xml \"./results/results-*.xml\"",
+    "script-firefox": "npm run firefox-test || npm run postfirefox-test"
   },
   "author": "",
   "license": "ISC",
