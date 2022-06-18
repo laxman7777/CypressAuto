@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-18T06:59:24.125Z",
+    "end": "2022-06-18T06:59:36.455Z",
+    "duration": 12330,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "70adca1e-e667-4423-8ab9-f6454b04d6a4",
+      "title": "",
+      "fullFile": "cypress/integration/test/second.js",
+      "file": "cypress/integration/test/second.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "319e3eb7-f251-4355-af3c-3b4b47b61564",
+          "title": "My second suite test case execution",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "My first test case execution from second suite",
+              "fullTitle": "My second suite test case execution My first test case execution from second suite",
+              "timedOut": null,
+              "duration": 10327,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log(\"test case execution started\");\ncy.visit(\"https://rahulshettyacademy.com/AutomationPractice/\"); //checkbox checked\ncy.get(\"#checkBoxOption1\").check(); //click also use but check is more reliable\ncy.get(\"#checkBoxOption1\").uncheck(); //unchecked\n//use asseration is checkbox checked or not\ncy.get(\"#checkBoxOption1\").check().should(\"be.checked\").and(\"have.value\", \"option1\"); //assertion unchecked\ncy.get(\"#checkBoxOption1\").uncheck().should(\"not.be.checked\").should(\"have.value\", \"option1\");",
+              "err": {},
+              "uuid": "941d385b-e49c-4d25-97c9-55bc9b7d1909",
+              "parentUUID": "319e3eb7-f251-4355-af3c-3b4b47b61564",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "941d385b-e49c-4d25-97c9-55bc9b7d1909"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10327,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "results/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

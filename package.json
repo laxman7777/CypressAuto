@@ -6,7 +6,7 @@
   "scripts": {
 
     "electron-test": "cypress run",
-    "postelectron-test": "jrm ./cypress/reports/junit/combined-report.xml \"./cypress/reports/junit/results-*.xml\"",
+    "postelectron-test": "jrm ./results/combined-report.xml \"./results/results-*.xml\"",
     "script-electron": "npm run electron-test || npm run postelectron-test"
   },
   "author": "",
